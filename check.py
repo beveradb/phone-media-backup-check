@@ -114,6 +114,7 @@ if files_counts["missing"] > 0:
     print("mv " + " ".join(missing_filenames) + " /sdcard/DCIMCameraBackupReview/")
 else:
     print("All " + str(files_counts["backed_up"]) + " files backed up. Original to backup filenames map JSON written!")
-    print("To permanently delete " + humanize.naturalsize(
-        files_counts["backed_up_total_size"]
-    ) + " from phone, run: adb shell rm /sdcard/DCIM/Camera/*")
+    print("To permanently delete " + humanize.naturalsize(files_counts["backed_up_total_size"]) + " from phone, run:")
+    print("adb shell")
+    print("cd /sdcard/DCIM/Camera")
+    print("rm -v *")
