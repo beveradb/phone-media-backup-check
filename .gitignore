@@ -131,5 +131,6 @@ dmypy.json
 # IDEA
 .idea
 
-# Dump files
+# Output files
 *.txt
+*.json
